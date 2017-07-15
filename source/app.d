@@ -1,6 +1,7 @@
 import std.stdio;
 import derelict.sdl2.sdl;
 import derelict.sdl2.image;
+import std.conv;
 
 void main()
 {
@@ -18,13 +19,13 @@ void main()
 	// Initialise IMG
 	int flags = IMG_INIT_PNG | IMG_INIT_JPG;
 	if ((IMG_Init(flags) & flags) != flags) {
-		writeln("IMG_Init: ", IMG_GetError());
+		writeln("IMG_Init: ", to!string(IMG_GetError()));
 	}
 
 	// Load image
 	SDL_Surface *imgSurf = IMG_Load("grumpy-cat.jpg");
 	if (imgSurf is null) {
-		writeln("IMG_Load: ", IMG_GetError());
+		writeln("IMG_Load: ", to!string(IMG_GetError()));
 	}
 
 	// Create a window
