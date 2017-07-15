@@ -8,5 +8,6 @@
 	"license": "public domain",
 	"dependencies": {
 		"derelict-sdl2": "~>2.1.4"
-	}
+	},
+	"targetPath": "bin"
 }
