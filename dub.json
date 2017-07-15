@@ -7,6 +7,6 @@
 	"copyright": "Copyright © 2016, Peter Cartwright",
 	"license": "public domain",
 	"dependencies": {
-		"derelict-sdl2": "~>2.0.0"
+		"derelict-sdl2": "~>2.1.4"
 	}
 }
